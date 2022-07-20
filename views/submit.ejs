@@ -3,13 +3,14 @@
 <div class="container">
   <div class="jumbotron centered">
     <i class="fas fa-key fa-6x"></i>
-    <h1 class="display-3">Secrets</h1>
-    <p class="secret-text">Don't keep your secrets, share them anonymously!</p>
+    <h1 class="display-3">Uploaded Photos</h1>
+    <p class="secret-text">Don't keep your Photos, share them anonymously!</p>
 
-    <form action="/submit" method="POST">
+    <form action="/submit" method="POST" enctype="multipart/form-data">
 
       <div class="form-group">
-        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?">
+
+        <input type="file" name= "avatar">
       </div>
       <button type="submit" class="btn btn-dark">Submit</button>
     </form>
